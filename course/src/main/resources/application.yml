@@ -7,14 +7,14 @@ spring:
     username: postgres
     password: carlos123
 
-jpa:
-  hibernate:
-    ddl-auto: update
-    dialect: org.hibernate.dialect.PostgreSQLDialect
-    jdbc:
-      lob.non-contextual-creation: true
-
-  properties:
+  jpa:
     hibernate:
-      show_sql: true
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true
+
+    properties:
+      hibernate:
+        show_sql: true
 
